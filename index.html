@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Info on one of my favorite movies!</a>
+<script>
+    // array listing favorite movies
+    var jasonFilms = ["spirited away", "shawshank redemption", "the matrix", "inception", "kizumonogatari"];
+
+    // array of favorite places
+    var jasonSpots = ["niagara falls", "new york city", "nyc"];
+
+    // website prompt to collect user's favorite movie and converted to lowercase. this is to widen margin of error when matching.
+    var userMovie = prompt("What is your favorite movie?").toLowerCase();
+
+    // same as above
+    userTravel = prompt("Where is your favorite place you have traveled to?").toLowerCase();
+
+    //conditional statement comparing movies
+    if (jasonFilms.indexOf(userMovie) === -1) {
+            alert(userMovie + "? I haven't seen it.");
+        }
+        else {
+            alert(userMovie + "? I love that movie!");
+        }
+
+    //conditional statement comparing movies
+    if (jasonSpots.indexOf(userTravel) === -1) {
+        alert(userTravel + "? I've never been.");
+    }
+    else {
+        alert(userTravel + " is one of my favorite places!");
+    }
+</script>
+
+</body>
+</html>
